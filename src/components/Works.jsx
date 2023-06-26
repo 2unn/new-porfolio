@@ -1,6 +1,6 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { github } from "../assets";
+import { github, gitlab } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -13,6 +13,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  link,
   source_code_link,
 }) => {
   return (
@@ -33,7 +34,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
+                src={source_code_link.includes("github") ? github : gitlab}
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
@@ -41,17 +42,19 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
-          ))}
-        </div>
+        <a href={link} target="_blank">
+          <div className="mt-5">
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </a>
       </Tilt>
     </motion.div>
   );

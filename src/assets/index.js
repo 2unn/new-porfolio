@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import gitlab from "./gitlab.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -27,8 +28,8 @@ import mmd from "./company/mmd.webp";
 import beau from "./company/beau.jpg";
 
 import xo_booking from "./xo_booking.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import hoobank from "./hoobank.png";
+import carhub from "./carhub.png";
 
 export {
   logo,
@@ -37,6 +38,7 @@ export {
   mobile,
   web,
   github,
+  gitlab,
   menu,
   close,
   css,
@@ -57,6 +59,6 @@ export {
   mmd,
   beau,
   xo_booking,
-  jobit,
-  tripguide,
+  hoobank,
+  carhub,
 };

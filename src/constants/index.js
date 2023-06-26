@@ -16,8 +16,8 @@ import {
   beau,
   mmd,
   xo_booking,
-  jobit,
-  tripguide,
+  hoobank,
+  carhub,
 } from "../assets";
 
 export const navLinks = [
@@ -119,6 +119,7 @@ const experiences = [
     date: "Jan 2021 - Feb 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
+      "Working with shopify to create theme for user on that platform",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -128,28 +129,21 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
+    testimonial: "There are no mistakes in life, only lessons.",
+    name: "Robin Sharma",
+    designation: "Author",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "It gets easier. Every day it gets a little easier. But you gotta do it every day —that’s the hard part. But it does get easier",
+    name: "BoJack Horseman",
+    designation: "Fictional Character",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial: "If you quit ONCE it becomes a habit.Never quit!!!",
+    name: "Michael Jordan",
+    designation: "Basketball player",
   },
 ];
 
@@ -170,49 +164,49 @@ const projects = [
       },
     ],
     image: xo_booking,
-    source_code_link: "https://github.com/",
+    link: "https://xotiny.com",
+    source_code_link:
+      "https://gitlab.com/beau-headless/xopify/website/-/tree/main/src/components/apps/booking",
   },
   {
-    name: "Job IT",
+    name: "HooBank Landing Page",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Static website to identify the HooBank. Using Reactjs and Tailwindcss to create, it also have responsive for mobile.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: hoobank,
+    link: "https://hoo-bank-rouge.vercel.app/",
+    source_code_link: "https://github.com/2unn/HooBank",
   },
   {
-    name: "Trip Guide",
+    name: "CarHub",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A react-ts website call API to show the details of cars. The website have many function such as filter, searching, rendering the details.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "headlessUI",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: carhub,
+    link: "https://cars-api-lake.vercel.app",
+    source_code_link: "https://github.com/2unn/CarsAPI",
   },
 ];
 
