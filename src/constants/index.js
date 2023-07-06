@@ -105,10 +105,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Provided exceptional customer service to drive sales and meet monthly targets.",
+      "Demonstrated product knowledge and effectively communicated the benefits of various products to customers.",
+      "Utilized consultative selling techniques to understand customer needs and recommend appropriate solutions.",
+      "Consistently achieved or exceeded sales goals, receiving recognition as a top-performing sales associate.",
     ],
   },
   {
